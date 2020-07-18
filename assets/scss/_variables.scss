@@ -1,0 +1,38 @@
+//
+// Typography
+//
+
+$font-size-root:         16px;
+$font-size-base:         1rem;
+$font-family-sans-serif: "Helvetica Neue", Helvetica, sans-serif;
+$line-height-base:       1.5;
+
+//
+// Breakpoints
+//
+
+$sm-viewport: 767px;
+$md-viewport: 992px;
+$lg-viewport: 1024px;
+
+//
+// Spacing
+//
+$spacer: 1rem;
+
+@mixin sm {
+    @media (max-width: $sm-viewport) { 
+        @content; 
+    }
+}
+
+@mixin md {
+    @media (min-width: $md-viewport) {
+         @content; 
+    }
+}
+@mixin lg {
+    @media (min-width: $lg-viewport) { 
+        @content; 
+    }
+}
